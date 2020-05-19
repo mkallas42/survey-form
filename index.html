@@ -6,7 +6,78 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 <body>
+<div>
+    <header>
+        <h1 id="title">MK Survey Form</h1>
+        <p id="description">Thank you for taking the time and help us understand which training materials to create</p>
+    </header>
+</div>
+<form id="survey-form">
+    <div>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    </div>
 
+    <div>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+        <label id="number-label" for="number">Age</label>
+        <input id="number" name="age" type="number" min="15" max="99" placeholder="Enter your age">
+    </div>
+
+    <div>
+        <p>Which role do you have in SP?</p>
+        <select id="dropdown" name="role" required >
+            <option disabled selected value>Select Your role</option>
+            <option value="creditor">Creditor</option>
+            <option value="debtor">Debtor</option>
+            <option value="supplier">Supplier</option>
+        </select>
+    </div>
+
+    <div>
+        <p>Would you recommend SP to others in Your role?</p>
+        <label>
+            <input name="user-recommend" value="yes" type="radio" checked>YES
+        </label>
+        <label>
+            <input name="user-recommend" value="maybe" type="radio">MAYBE
+        </label>
+        <label>
+            <input name="user-recommend" value="no" type="radio">NO
+        </label>
+    </div>
+    <div>
+        <p>Why do you use SP?</p>
+        <select id="dropdown" name="mostLike" required>
+            <option disabled selected value>Select an option</option>
+            <option value="paymentterms">I can extend my perment terms</option>
+            <option value="easy">Easy to use</option>
+            <option value="price">Good price for the service</option>
+            <option value="paperwork"> No paperwork</option>
+        </select>
+    </div>
+    <div>
+        <p>What would you like us to imrpove?</p>
+        <label><input name="prefer" value="registration" type="checkbox">Registration</label>
+        <label><input name="prefer" value="invoiceupload" type="checkbox">Invoice upload</label>
+        <label><input name="prefer" value="userinvitation" type="checkbox">User invitation</label>
+        <label><input name="prefer" value="invoiceapproval" type="checkbox">Invoice approval</label>
+        <label><input name="prefer" value="invoicesale" type="checkbox">Invoice sale</label>
+        <label><input name="prefer" value="supplierinvitation" type="checkbox">Supplier invitation</label>
+        <label><input name="prefer" value="reports" type="checkbox">Access to reports</label>
+    </div>
+    <div>
+        <p>Any suggestions?</p>
+        <textarea name="comment" placeholder="Enter your suggestion here ..."></textarea>
+    </div>
+    <div>
+        <button id="submit" type="submit">Submit</button>
+    </div>
+</form>
 </body>
 
 </html>
