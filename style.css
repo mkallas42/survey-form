@@ -1,0 +1,36 @@
+body {
+    background-size: cover;
+    background-image: linear-gradient(180deg,#e1aeb5,#b1d3c8);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    display: block;
+}
+
+#description {}
+
+#survey-form {}
+
+#name {}
+
+#email {}
+
+#number {}
+
+#name-label {}
+
+#email-label {}
+
+#number-label {}
+
+#dropdown {}
+
+#submit { }
